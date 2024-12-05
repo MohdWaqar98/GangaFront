@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="icon" data-th-href="@{'assets/Simplification.png'}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+</head>
+<body class="font-poppins m-0 p-0 relative min-h-screen bg-gradient-to-b from-[#00ADFF] to-[#006FFF] overflow-x-hidden overflow-y-scroll box-border">
+    <!-- Vector Images -->
+    <div class="absolute inset-0 pointer-events-none flex justify-between items-start">
+        <!-- Left Vector -->
+        <img 
+            src="assets/Vector12.png" 
+            alt="Dotted Vector 1" 
+            class="w-[5rem] sm:w-[6.25rem] md:w-[9.375rem] lg:w-[12.5rem] ml-[-1rem] mt-[2rem]"
+        />
+        <!-- Right Vector -->
+        <img 
+            src="assets/Vector11.png" 
+            alt="Dotted Vector 2" 
+            class="w-[7.5rem] sm:w-[9.375rem] md:w-[12.5rem] lg:w-[15.625rem] mr-[-1rem] mt-[1rem]"
+        />
+    </div>
+    
+    
+
+    <!-- Main Content -->
+    <div class="relative z-10 px-6 py-8 flex flex-col items-center justify-start space-y-6 min-h-screen">
+        <!-- Header -->
+        <div class="flex items-center w-full max-w-xl">
+            <!-- Back Arrow -->
+            <button class="text-white text-lg font-bold"><svg xmlns="http://www.w3.org/2000/svg" width="24.13px" height="24.13px" viewBox="0 0 24 24"><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42a.996.996 0 0 0-1.41 0l-6.59 6.59a.996.996 0 0 0 0 1.41l6.59 6.59a.996.996 0 1 0 1.41-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1"/></svg></button>
+            <!-- Settings Text -->
+            <h1 class="mx-auto text-white text-[24px] font-bold">Settings</h1>
+        </div>
+
+        <!-- Content Boxes -->
+        <div class="w-full max-w-xl space-y-4">
+            <!-- Container 1 -->
+            <div class="flex items-center justify-between p-4 bg-white rounded-xl shadow-md">
+                <span class="text-black font-medium text-[19px]">Set Alert On/Off</span>
+                <div class="relative w-14 h-8">
+                    <input 
+                        type="checkbox" 
+                        id="alert-toggle" 
+                        class="peer hidden"
+                    />
+                    <label 
+                        for="alert-toggle" 
+                        class="block w-full h-full bg-gray-400 rounded-full cursor-pointer transition-all peer-checked:bg-sky-500"
+                    >
+                        <span 
+                            class="absolute top-1 left-1 h-6 w-6 bg-gradient-to-r from-gray-300 to-white rounded-full transition-transform transform peer-checked:translate-x-6 peer-checked:scale-110"
+                        ></span>
+                    </label>
+                </div>
+            </div>
+            <!-- Container 2 -->
+            <div class="flex items-center justify-between p-4 bg-white rounded-xl shadow-md">
+                <span class="text-black font-medium text-[19px]">Help and Support</span>
+                <span class="text-black"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024"><path fill="currentColor" d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8l-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0"/></svg></span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-white rounded-xl shadow-md">
+                <span class="text-black font-medium text-[19px]">Privacy Policy</span>
+                <span class="text-black"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024"><path fill="currentColor" d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8l-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0"/></svg></span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-white rounded-xl shadow-md">
+                <span class="text-black font-medium text-[19px]">About Ganga Mitra</span>
+                <span class="text-black"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024"><path fill="currentColor" d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8l-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0"/></svg></span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-white rounded-xl shadow-md">
+                <span class="text-black font-medium text-[19px]">Choose Language</span>
+                <span class="text-black"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024"><path fill="currentColor" d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8l-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0"/></svg></span>
+            </div>
+            <!-- Add more containers as needed -->
+        </div>
+    </div>
+
+    <script>
+        // Toggle functionality
+        const toggle = document.getElementById('alert-toggle');
+        toggle.addEventListener('change', () => {
+            console.log(`Set Alert is ${toggle.checked ? 'On' : 'Off'}`);
+        });
+    </script>
+</body>
+</html>
